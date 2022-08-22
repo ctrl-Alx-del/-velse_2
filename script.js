@@ -30,7 +30,7 @@ console.log(article2);
 let article2H3 = document.querySelector("section:nth-child(2) " + "article")
 
 console.log(article2H3);
-*/
+
 
 
 let overskrift = document.querySelector("h1");
@@ -52,3 +52,16 @@ article2H3.textContent = "Muffins";
 let article2 = document.querySelector("#article2");
 
 article2.innerHTML = "<b> Muuuuuuuuuuuffiiiiiiins </b>";
+*/
+
+let billed1 = document.querySelector("img");
+
+let billed2 = document.querySelector("section:nth-child(2) "+ "img");
+
+billed1.src = "Cola.webp";
+
+billed2.src = "Tuborg.webp";
+
+billed1.alt = "Dette er en cola";
+
+billed2.alt = "Dette er en øl";
