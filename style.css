@@ -1,0 +1,23 @@
+h1 {
+    text-align: center;
+}
+
+
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#position {
+margin-left: 321px;
+}
+
+
+#article2 {
+    margin-right: 324px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+}

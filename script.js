@@ -109,3 +109,42 @@ billede1.addEventListener("click", skiftBillede);
 function skiftBillede() {
 billede1.src = "https://placeimg.com/400/300/arch?t="+Math.floor(Math.random()*11);
 }
+
+
+
+document.querySelector("article").addEventListener("mouseover", overlayOn);
+document.querySelector("article").addEventListener("mouseout", overlayOff);
+
+
+document.querySelector("#grid-container > section:nth-child(2) > article:nth-child(2)").addEventListener("mouseover", overlayOn1);
+document.querySelector("#grid-container > section:nth-child(2) > article:nth-child(2)").addEventListener("mouseout", overlayOff1);
+
+document.querySelector("#grid-container > section:nth-child(2) > article:nth-child(1)").addEventListener("mouseover", overlayOn2);
+document.querySelector("#grid-container > section:nth-child(2) > article:nth-child(1)").addEventListener("mouseout", overlayOff2);
+
+function overlayOn() {
+document.querySelector("article").classList.add("box");
+}
+
+function overlayOn2(){
+    document.querySelector("#grid-container > section:nth-child(2) > article:nth-child(1)").classList.add("box");
+}
+
+function overlayOn1() {
+    document.querySelector("#grid-container > section:nth-child(2) > article:nth-child(2)").classList.add("box");
+
+}
+
+function overlayOff1(){
+    document.querySelector("#grid-container > section:nth-child(2) > article:nth-child(2)").classList.remove("box");
+
+}
+
+function overlayOff2(){
+    document.querySelector("#grid-container > section:nth-child(2) > article:nth-child(1)").classList.remove("box");
+}
+
+function overlayOff(){
+    document.querySelector("article").classList.remove("box");
+}
+
