@@ -67,6 +67,12 @@ billed1.alt = "Dette er en cola";
 billed2.alt = "Dette er en øl";
 */
 
+document.addEventListener("DOMContentLoaded", erLoadet);
+
+function erLoadet(){
+    console.log("Siden er loadet");
+}
+
 let article = document.createElement("article");
 
 let section2 = document.querySelector("section:nth-child(2)");
