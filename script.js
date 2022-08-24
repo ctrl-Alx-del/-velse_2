@@ -52,7 +52,7 @@ article2H3.textContent = "Muffins";
 let article2 = document.querySelector("#article2");
 
 article2.innerHTML = "<b> Muuuuuuuuuuuffiiiiiiins </b>";
-*/
+
 
 let billed1 = document.querySelector("img");
 
@@ -65,3 +65,32 @@ billed2.src = "Tuborg.webp";
 billed1.alt = "Dette er en cola";
 
 billed2.alt = "Dette er en øl";
+*/
+
+let article = document.createElement("article");
+
+let section2 = document.querySelector("section:nth-child(2)");
+
+section2.appendChild(article);
+
+let h3 = document.createElement("h3");
+
+let overskrift = document.createTextNode("chokolade kage");
+
+h3.appendChild(overskrift);
+
+article.appendChild(h3);
+
+let tekst = document.createElement("p");
+
+let tekstIndhold = document.createTextNode("Sådan laver du en god chokolade kage");
+
+tekst.appendChild(tekstIndhold);
+
+article.appendChild(tekst);
+
+let billede = document.createElement("img");
+
+billede.src = "chokoladekage.webp";
+
+article.appendChild(billede);
