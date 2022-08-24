@@ -100,3 +100,12 @@ let billede = document.createElement("img");
 billede.src = "chokoladekage.webp";
 
 article.appendChild(billede);
+
+
+let billede1 = document.querySelector("img");
+
+billede1.addEventListener("click", skiftBillede);
+
+function skiftBillede() {
+billede1.src = "https://placeimg.com/400/300/arch?t="+Math.floor(Math.random()*11);
+}
