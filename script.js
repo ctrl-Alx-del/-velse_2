@@ -109,3 +109,15 @@ billede1.addEventListener("click", skiftBillede);
 function skiftBillede() {
 billede1.src = "https://placeimg.com/400/300/arch?t="+Math.floor(Math.random()*11);
 }
+
+
+const kategori = ["animals", "arch", "people", "nature", "tech"];
+
+let billede2 = document.querySelector("#grid-container > section:nth-child(2) > article:nth-child(1) > img:nth-child(1)");
+billede2.addEventListener("click", skift);
+
+function skift() {
+    const nummer = Math.round(Math.random()*4);
+    billede2.src = "https://placeimg.com/400/300/"+kategori[nummer];
+    billede2.alt = kategori[nummer];
+}
